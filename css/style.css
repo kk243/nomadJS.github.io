@@ -1,0 +1,82 @@
+body {
+  height: 100vh;
+  background-size: cover;
+
+}
+
+.hidden {
+    display: none;
+}
+
+#greeting {
+  color:beige;
+  margin: 10px;
+}
+
+.clock-weather {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.youtube-area {
+  width: calc(50% - 10px); /* 화면 왼쪽 1/3을 차지하도록 설정 */
+  height: 80vh;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.todo-container {
+  width: calc(50% - 10px); /* 화면 왼쪽 1/3을 차지하도록 설정 */
+  height: 80vh;
+  overflow-y: auto; /* 내용이 넘칠 경우 스크롤이 표시되도록 설정 */
+  padding: 2px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.todo-container h2 {
+  margin-top: 0; /* h2의 위쪽 마진을 0으로 설정하여 위로 이동 */
+}
+
+#todo-list li{
+  line-height: 30px; 
+  position: relative;
+  margin-bottom: 3px;
+  text-indent: 5px; 
+  background: none;
+  border-radius: 3px;
+  font-weight: 300;
+  cursor: pointer;
+}
+#todo-list button{
+  background-color: transparent;
+}
+
+
+
+.todo-container input[type="text"] {
+  width: 100%; 
+  padding: 12px; 
+  box-sizing: border-box; 
+}
+
+#clock {
+  margin: 10px;
+  color:beige;
+}
+#weather {
+  color:beige;
+  margin: 10px;
+}
+#quote {
+  color:beige;
+}
+

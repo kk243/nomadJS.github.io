@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <br>
+    <h1 class="hidden" id="greeting"></h1>
+    <form class="hidden" id="login-form">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="이름이 뭐야?"
+      />
+      <input type="submit" value="Log In" />
+    </form>
+    <br>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <br>
+    <div class = "clock-weather">
+      <div class="clock-div">
+        <h2 id="clock">00:00:00</h2>
+      </div>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="todo-container">
+        <h2>TO-DO LIST</h2>
+        <form id="todo-form">
+            <input type="text" placeholder="오늘의 할 일!" required autofocus/>
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+
+      <div class="youtube-area">
+        <h2>노동요</h2>
+        <div id="player">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/JX4saGj5XAw?si=CH37xYEh8CYft6Qq?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+  </body>
+</html>
